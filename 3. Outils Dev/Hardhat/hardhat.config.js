@@ -4,6 +4,7 @@ require("dotenv").config();
 
 const PK = process.env.PK || "";
 const RPC_URL=process.env.INFURA_URL || "";
+const AMOY=process.env.AMOY || "";
 const ETHERSCAN = process.env.ETHERSCAN_API || "";
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -17,6 +18,11 @@ module.exports = {
       url: RPC_URL ,
       chainId: 17000,
       accounts: [`0x${PK}`]
+    },   
+    amoy : {
+      url: AMOY ,
+      chainId: 80002,
+      accounts: [`0x${PK}`]
     },
     hardhat: {
       forking: {
@@ -24,7 +30,7 @@ module.exports = {
       }
     }
   },
-  solidity: "0.8.27",
+  solidity: "0.8.26",
   etherscan:{
     apiKey:{
       holesky:ETHERSCAN
