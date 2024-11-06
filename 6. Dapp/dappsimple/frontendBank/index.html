@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank DApp</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; background-color: #f5f5f5;">
+    <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <h1 style="text-align: center; color: #333; margin-bottom: 30px;">Bank DApp</h1>
+        
+        <div style="text-align: center; margin-bottom: 20px;">
+            <button id="connectButton" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Connect</button>
+        </div>
+
+        <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
+            <p style="margin: 0; font-size: 18px;">Balance: <span id="balanceOfUser" style="font-weight: bold; color: #2196F3;">0</span></p>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <input type="number" id="inputSendEthers" style="width: 70%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-right: 10px;" placeholder="Amount to send"/>
+            <button id="buttonSendEthers" style="background-color: #2196F3; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Send</button>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <input type="number" id="inputWithdrawEthers" style="width: 70%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-right: 10px;" placeholder="Amount to withdraw"/>
+            <button id="buttonWithdrawEthers" style="background-color: #ff9800; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Withdraw</button>
+        </div>
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
